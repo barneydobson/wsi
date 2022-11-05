@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"name": "points_locations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::27700" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "farmoor_abstraction" }, "geometry": { "type": "Point", "coordinates": [ 447193.271648206980899, 210204.39720278698951 ] } },
+{ "type": "Feature", "properties": { "name": "thames" }, "geometry": { "type": "Point", "coordinates": [ 444553.757344728102908, 208671.116935172060039 ] } },
+{ "type": "Feature", "properties": { "name": "evenlode" }, "geometry": { "type": "Point", "coordinates": [ 444803.245803258207161, 209968.835814726597164 ] } },
+{ "type": "Feature", "properties": { "name": "ray" }, "geometry": { "type": "Point", "coordinates": [ 452334.241451664071064, 213734.77082821552176 ] } },
+{ "type": "Feature", "properties": { "name": "cherwell" }, "geometry": { "type": "Point", "coordinates": [ 448322.315483848331496, 215990.659458106965758 ] } },
+{ "type": "Feature", "properties": { "name": "oxford_fwtw" }, "geometry": { "type": "Point", "coordinates": [ 445129.387841082643718, 206490.570321662002243 ] } },
+{ "type": "Feature", "properties": { "name": "oxford_wwtw" }, "geometry": { "type": "Point", "coordinates": [ 454354.048711575742345, 201923.415951047907583 ] } },
+{ "type": "Feature", "properties": { "name": "thames_mixer" }, "geometry": { "type": "Point", "coordinates": [ 453086.204326246981509, 200795.47163558145985 ] } },
+{ "type": "Feature", "properties": { "name": "thames_above_abingdon" }, "geometry": { "type": "Point", "coordinates": [ 453593.342079813068267, 197857.570163376047276 ] } },
+{ "type": "Feature", "properties": { "name": "oxford" }, "geometry": { "type": "Point", "coordinates": [ 450445.334339758381248, 207120.12633056694176 ] } },
+{ "type": "Feature", "properties": { "name": "gw" }, "geometry": { "type": "Point", "coordinates": [ 451735.32843084493652, 207240.267565301968716 ] } },
+{ "type": "Feature", "properties": { "name": "oxford_land" }, "geometry": { "type": "Point", "coordinates": [ 451479.573614976950921, 205754.92228964145761 ] } },
+{ "type": "Feature", "properties": { "name": "combined_sewer" }, "geometry": { "type": "Point", "coordinates": [ 453023.939232126343995, 204102.352711724466644 ] } },
+{ "type": "Feature", "properties": { "name": "oxford_distribution" }, "geometry": { "type": "Point", "coordinates": [ 448676.107366815034766, 205941.820039099082351 ] } },
+{ "type": "Feature", "properties": { "name": "evenlode_thames" }, "geometry": { "type": "Point", "coordinates": [ 445807.062961385643575, 209784.700089471472893 ] } },
+{ "type": "Feature", "properties": { "name": "cherwell_ray" }, "geometry": { "type": "Point", "coordinates": [ 452377.994378837756813, 213619.382871634908952 ] } },
+{ "type": "Feature", "properties": { "name": "cherwell_thames" }, "geometry": { "type": "Point", "coordinates": [ 451992.722700056387112, 205054.875454529828858 ] } },
+{ "type": "Feature", "properties": { "name": "farmoor" }, "geometry": { "type": "Point", "coordinates": [ 444554.065823141369037, 205957.430792123777792 ] } }
+]
+}

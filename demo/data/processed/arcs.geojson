@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::27700" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "evenlode_to_thames" }, "geometry": { "type": "LineString", "coordinates": [ [ 444803.245803258207161, 209968.835814726597164 ], [ 445807.062961385643575, 209784.700089471472893 ] ] } },
+{ "type": "Feature", "properties": { "name": "thames_to_thames" }, "geometry": { "type": "LineString", "coordinates": [ [ 444553.757344728102908, 208671.116935172060039 ], [ 445807.062961385643575, 209784.700089471472893 ] ] } },
+{ "type": "Feature", "properties": { "name": "ray_to_cherwell" }, "geometry": { "type": "LineString", "coordinates": [ [ 452334.241451664071064, 213734.77082821552176 ], [ 452377.994378837756813, 213619.382871634908952 ] ] } },
+{ "type": "Feature", "properties": { "name": "cherwell_to_cherwell" }, "geometry": { "type": "LineString", "coordinates": [ [ 448322.315483848331496, 215990.659458106965758 ], [ 452377.994378837756813, 213619.382871634908952 ] ] } },
+{ "type": "Feature", "properties": { "name": "thames_to_farmoor" }, "geometry": { "type": "LineString", "coordinates": [ [ 445807.062961385643575, 209784.700089471472893 ], [ 447193.271648206980899, 210204.39720278698951 ] ] } },
+{ "type": "Feature", "properties": { "name": "farmoor_to_mixer" }, "geometry": { "type": "LineString", "coordinates": [ [ 447193.271648206980899, 210204.39720278698951 ], [ 453086.204326246981509, 200795.47163558145985 ] ] } },
+{ "type": "Feature", "properties": { "name": "cherwell_to_mixer" }, "geometry": { "type": "LineString", "coordinates": [ [ 452377.994378837756813, 213619.382871634908952 ], [ 453086.204326246981509, 200795.47163558145985 ] ] } },
+{ "type": "Feature", "properties": { "name": "wwtw_to_mixer" }, "geometry": { "type": "LineString", "coordinates": [ [ 454354.048711575742345, 201923.415951047907583 ], [ 453086.204326246981509, 200795.47163558145985 ] ] } },
+{ "type": "Feature", "properties": { "name": "sewer_overflow" }, "geometry": { "type": "LineString", "coordinates": [ [ 453023.939232126343995, 204102.352711724466644 ], [ 453086.204326246981509, 200795.47163558145985 ] ] } },
+{ "type": "Feature", "properties": { "name": "mixer_to_waste" }, "geometry": { "type": "LineString", "coordinates": [ [ 453086.204326246981509, 200795.47163558145985 ], [ 453593.342079813068267, 197857.570163376047276 ] ] } },
+{ "type": "Feature", "properties": { "name": "abstraction_to_farmoor" }, "geometry": { "type": "LineString", "coordinates": [ [ 447193.271648206980899, 210204.39720278698951 ], [ 444554.065823141369037, 205957.430792123777792 ] ] } },
+{ "type": "Feature", "properties": { "name": "distribution_to_demand" }, "geometry": { "type": "LineString", "coordinates": [ [ 448676.107366815034766, 205941.820039099082351 ], [ 450445.334339758381248, 207120.12633056694176 ] ] } },
+{ "type": "Feature", "properties": { "name": "demand_to_sewer" }, "geometry": { "type": "LineString", "coordinates": [ [ 450445.334339758381248, 207120.12633056694176 ], [ 453023.939232126343995, 204102.352711724466644 ] ] } },
+{ "type": "Feature", "properties": { "name": "land_to_sewer" }, "geometry": { "type": "LineString", "coordinates": [ [ 451479.573614976950921, 205754.92228964145761 ], [ 453023.939232126343995, 204102.352711724466644 ] ] } },
+{ "type": "Feature", "properties": { "name": "sewer_to_wwtw" }, "geometry": { "type": "LineString", "coordinates": [ [ 453023.939232126343995, 204102.352711724466644 ], [ 454354.048711575742345, 201923.415951047907583 ] ] } },
+{ "type": "Feature", "properties": { "name": "fwtw_to_sewer" }, "geometry": { "type": "LineString", "coordinates": [ [ 445129.387841082643718, 206490.570321662002243 ], [ 453023.939232126343995, 204102.352711724466644 ] ] } },
+{ "type": "Feature", "properties": { "name": "fwtw_to_distribution" }, "geometry": { "type": "LineString", "coordinates": [ [ 445129.387841082643718, 206490.570321662002243 ], [ 448676.107366815034766, 205941.820039099082351 ] ] } },
+{ "type": "Feature", "properties": { "name": "reservoir_to_fwtw" }, "geometry": { "type": "LineString", "coordinates": [ [ 444554.065823141369037, 205957.430792123777792 ], [ 445129.387841082643718, 206490.570321662002243 ] ] } },
+{ "type": "Feature", "properties": { "name": "land_to_gw" }, "geometry": { "type": "LineString", "coordinates": [ [ 451479.573614976950921, 205754.92228964145761 ], [ 451735.32843084493652, 207240.267565301968716 ] ] } },
+{ "type": "Feature", "properties": { "name": "garden_to_gw" }, "geometry": { "type": "LineString", "coordinates": [ [ 450445.334339758381248, 207120.12633056694176 ], [ 451735.32843084493652, 207240.267565301968716 ] ] } },
+{ "type": "Feature", "properties": { "name": "gw_to_mixer" }, "geometry": { "type": "LineString", "coordinates": [ [ 451735.32843084493652, 207240.267565301968716 ], [ 453086.204326246981509, 200795.47163558145985 ] ] } }
+]
+}

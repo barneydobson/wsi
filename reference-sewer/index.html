@@ -1,0 +1,1842 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.5.2">
+    
+    
+      
+        <title>API Reference - Sewer - WSIMOD docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f9400aa.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference-sewer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="WSIMOD docs" class="md-header__button md-logo" aria-label="WSIMOD docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WSIMOD docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference - Sewer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="WSIMOD docs" class="md-nav__button md-logo" aria-label="WSIMOD docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    WSIMOD docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper/paper/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/" class="md-nav__link">
+        How to guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        API reference
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demo/scripts/quickstart_demo/" class="md-nav__link">
+        Quickstart (.py)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coverage/" class="md-nav__link">
+        Coverage report
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer" class="md-nav__link">
+    wsimod.nodes.sewer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.EnfieldFoulSewer" class="md-nav__link">
+    EnfieldFoulSewer
+  </a>
+  
+    <nav class="md-nav" aria-label="EnfieldFoulSewer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.EnfieldFoulSewer.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer" class="md-nav__link">
+    Sewer
+  </a>
+  
+    <nav class="md-nav" aria-label="Sewer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.end_timestep" class="md-nav__link">
+    end_timestep()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.make_discharge" class="md-nav__link">
+    make_discharge()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.push_check_sewer" class="md-nav__link">
+    push_check_sewer()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.push_set_land" class="md-nav__link">
+    push_set_land()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.push_set_sewer" class="md-nav__link">
+    push_set_sewer()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.sewer.Sewer.reinit" class="md-nav__link">
+    reinit()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="api-reference-sewer">API Reference - Sewer</h1>
+<p>This section of the documentation provides a reference for the API of the nodes.sewer module.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wsimod.nodes.sewer"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Created on Mon Nov 15 14:20:36 2021</p>
+<p>@author: bdobson
+Converted to totals on 2022-05-03</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.sewer.EnfieldFoulSewer" class="doc doc-heading">
+        <code>EnfieldFoulSewer</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.sewer.Sewer" href="#wsimod.nodes.sewer.Sewer">Sewer</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">EnfieldFoulSewer</span><span class="p">(</span><span class="n">Sewer</span><span class="p">):</span>
+    <span class="c1">#TODO: combine with sewer</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                        <span class="n">name</span><span class="p">,</span>
+                        <span class="n">capacity</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="n">pipe_time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">#Sewer to sewer travel time</span>
+                        <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+                        <span class="n">chamber_area</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                        <span class="n">chamber_floor</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                        <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{}):</span>
+        <span class="sd">&quot;&quot;&quot;Alternate legacy sewer class... I dont think this is needed any more</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO above</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span>
+                                <span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span><span class="p">,</span>
+                                <span class="n">pipe_time</span> <span class="o">=</span> <span class="n">pipe_time</span><span class="p">,</span>
+                                <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="n">pipe_timearea</span><span class="p">,</span>
+                                <span class="n">chamber_area</span> <span class="o">=</span> <span class="n">chamber_area</span><span class="p">,</span>
+                                <span class="n">chamber_floor</span> <span class="o">=</span> <span class="n">chamber_floor</span><span class="p">,</span>
+                                <span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">&#39;Sewer&#39;</span>
+
+    <span class="k">def</span> <span class="nf">make_discharge</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">internal_arc</span><span class="o">.</span><span class="n">update_queue</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;push&#39;</span><span class="p">)</span>
+
+        <span class="c1">#Discharge downstream</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">storage</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">storm_exchange</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">capacity</span><span class="p">:</span>
+            <span class="n">exchange_v</span> <span class="o">=</span> <span class="nb">min</span><span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">storm_exchange</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">capacity</span><span class="p">,</span> 
+                             <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+            <span class="n">exchange</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span> <span class="n">exchange_v</span><span class="p">)</span>
+            <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">exchange</span><span class="p">)</span>
+            <span class="n">sent_to_exchange</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span> <span class="n">exchange_v</span> <span class="o">-</span> <span class="n">remaining</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+            <span class="n">sent_to_exchange_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_storage</span><span class="p">(</span><span class="n">sent_to_exchange</span><span class="p">)</span>
+
+
+        <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span>
+                                        <span class="n">of_type</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Waste&#39;</span><span class="p">])</span>
+
+        <span class="c1">#Update tank</span>
+        <span class="n">sent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">remaining</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+        <span class="n">sent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span>
+                                  <span class="n">sent</span><span class="p">)</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_storage</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">sent</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Miscalculated tank storage in discharge&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.EnfieldFoulSewer.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">capacity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">pipe_time</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">pipe_timearea</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="n">chamber_area</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">chamber_floor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">data_input_dict</span><span class="o">=</span><span class="p">{})</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alternate legacy sewer class... I dont think this is needed any more</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                    <span class="n">name</span><span class="p">,</span>
+                    <span class="n">capacity</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                    <span class="n">pipe_time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">#Sewer to sewer travel time</span>
+                    <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+                    <span class="n">chamber_area</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">chamber_floor</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                    <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{}):</span>
+    <span class="sd">&quot;&quot;&quot;Alternate legacy sewer class... I dont think this is needed any more</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO above</span>
+
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span>
+                            <span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span><span class="p">,</span>
+                            <span class="n">pipe_time</span> <span class="o">=</span> <span class="n">pipe_time</span><span class="p">,</span>
+                            <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="n">pipe_timearea</span><span class="p">,</span>
+                            <span class="n">chamber_area</span> <span class="o">=</span> <span class="n">chamber_area</span><span class="p">,</span>
+                            <span class="n">chamber_floor</span> <span class="o">=</span> <span class="n">chamber_floor</span><span class="p">,</span>
+                            <span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">&#39;Sewer&#39;</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.sewer.Sewer" class="doc doc-heading">
+        <code>Sewer</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.nodes.Node" href="../reference-nodes/#wsimod.nodes.nodes.Node">Node</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Sewer</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                        <span class="n">name</span><span class="p">,</span>
+                        <span class="n">capacity</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="n">pipe_time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">#Sewer to sewer travel time</span>
+                        <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+                        <span class="n">chamber_area</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                        <span class="n">chamber_floor</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                        <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{}):</span>
+        <span class="sd">&quot;&quot;&quot;Sewer node that has a QueueTank and storage capacity. Think carefully </span>
+<span class="sd">        about parameterising this tank, because of course the amount of water that </span>
+<span class="sd">        can flow through a sewer in a timestep is different in reality than in a </span>
+<span class="sd">        steady state (e.g., a sewer that can handle a peak of 6m3/s in practice could </span>
+<span class="sd">        not handle 6 * 86400 m3 of water in a day because that water does not flow </span>
+<span class="sd">        uniformly over the day). </span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name (str): node name</span>
+<span class="sd">            capacity (float, optional): Sewer tank capacity. Defaults to 0.</span>
+<span class="sd">            pipe_time (float, optional): Number of timesteps to spend in the queue of </span>
+<span class="sd">                the sewer tank. Defaults to 0.</span>
+<span class="sd">            pipe_timearea (dict, optional): Time area diagram that enables flows to </span>
+<span class="sd">                take a range of different durations to &#39;traverse&#39; the tank. The keys </span>
+<span class="sd">                of the dict are the number of timesteps while the values are the </span>
+<span class="sd">                proportion of flow. E.g., {0 : 0.7, 1 : 0.3} means 70% of flow takes </span>
+<span class="sd">                0 timesteps and 30% takes 1 timesteps. </span>
+<span class="sd">            chamber_area (float, optional): Sewer tank area. Defaults to 1.</span>
+<span class="sd">            chamber_floor (float, optional): Sewer tank datum. Defaults to 10.</span>
+<span class="sd">            data_input_dict (dict, optional): Dictionary of data inputs relevant for </span>
+<span class="sd">                the node (though I don&#39;t think it is used). Defaults to {}.</span>
+
+<span class="sd">        NOTE that currently the queuetank either applies the pipe_timearea </span>
+<span class="sd">        (push_set_land) OR the pipe_time (push_set_sewer). Though this behaviour </span>
+<span class="sd">        could be changed by setting the number_of_timesteps property to pipe_time of </span>
+<span class="sd">        the sewer_tank and removing the pipe_time setting in push_set_sewer.</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            make_discharge</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Set parameters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pipe_time</span> <span class="o">=</span> <span class="n">pipe_time</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pipe_timearea</span> <span class="o">=</span> <span class="n">pipe_timearea</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chamber_area</span> <span class="o">=</span> <span class="n">chamber_area</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chamber_floor</span> <span class="o">=</span> <span class="n">chamber_floor</span>
+        <span class="c1">#TODO I don&#39;t think this is used..</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span>
+
+        <span class="c1">#Update args</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="c1">#Update handlers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Sewer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_sewer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_sewer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_land</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Demand&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_land</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Sewer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Demand&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+
+        <span class="c1">#Create sewer tank</span>
+        <span class="c1">#TODO this might work better as a ResidenceTank (maybe also decay?)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span> <span class="o">=</span> <span class="n">QueueTank</span><span class="p">(</span><span class="n">capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span><span class="p">,</span>
+                                    <span class="n">number_of_timesteps</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                                    <span class="n">datum</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">chamber_floor</span><span class="p">,</span>
+                                    <span class="n">area</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">chamber_area</span><span class="p">)</span>
+
+        <span class="c1">#Mass balance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_ds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">ds</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">push_check_sewer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generic push check, simply looks at excess</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict, optional): A VQIP that can be used to limit the volume in </span>
+<span class="sd">                the return value (only volume key is used). Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            excess (dict): Sewer tank excess</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Get excess</span>
+        <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">get_excess</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">vqip</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">excess</span>
+        <span class="c1">#Limit respone to vqip volume</span>
+        <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">excess</span><span class="p">,</span> 
+                                       <span class="nb">min</span><span class="p">(</span><span class="n">excess</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="n">excess</span>
+
+    <span class="k">def</span> <span class="nf">push_set_sewer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generic push request setting that implements basic queue travel time (it </span>
+<span class="sd">        does NOT implement timearea travel time). Updates the sewer tank storage. </span>
+<span class="sd">        Assumes that the inflow arc has accurately calculated capacity with </span>
+<span class="sd">        push_check_sewer, thus the water is forced.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict): A VQIP amount of water to push</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A VQIP amount of water that was not received</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Sewer to sewer push, update queued tank</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">vqip</span><span class="p">,</span> 
+                                            <span class="n">time</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe_time</span>
+                                            <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">push_set_land</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Push request that applies pipe_timearea (see __init__ for description). As </span>
+<span class="sd">        with push_set_sewer, push is also forced. Used to receive flow from land or </span>
+<span class="sd">        demand that is assumed to occur widely across some kind of sewer catchment.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict): A VQIP amount to be pushed</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A VQIP amount that was not received</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Land/demand to sewer push, update queued tank</span>
+
+        <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+        <span class="c1">#Iterate over timearea diagram</span>
+        <span class="k">for</span> <span class="n">time</span><span class="p">,</span> <span class="n">normalised</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe_timearea</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">vqip_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">vqip</span><span class="p">,</span> 
+                                       <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">normalised</span><span class="p">)</span>
+            <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">vqip_</span><span class="p">,</span>
+                                                  <span class="n">time</span> <span class="o">=</span> <span class="n">time</span><span class="p">)</span>
+            <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">reply_</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">reply</span>
+
+    <span class="k">def</span> <span class="nf">make_discharge</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Function to trigger downstream sewer flow. Updates sewer tank travel time, pushes to WWTW, then sewer, then CSO. May flood land if, after these attempts, the sewer tank storage is above capacity</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">backflow</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">internal_arc</span><span class="o">.</span><span class="n">update_queue</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;push&#39;</span><span class="p">)</span>
+        <span class="c1">#TODO... do I need to do anything with this backflow... does it ever happen?</span>
+        <span class="c1">#Discharge to Sewer if possible</span>
+        <span class="c1"># remaining = self.push_distributed(self.sewer_tank.active_storage,</span>
+        <span class="c1">#                                 of_type = &#39;Sewer&#39;,</span>
+        <span class="c1">#                                 tag = &#39;Sewer&#39;)</span>
+
+        <span class="c1"># #Discharge to WWTW if possible</span>
+        <span class="c1"># remaining = self.push_distributed(remaining,</span>
+        <span class="c1">#                                 of_type = &#39;WWTW&#39;,</span>
+        <span class="c1">#                                 tag = &#39;Sewer&#39;)</span>
+
+
+        <span class="c1"># #CSO discharge</span>
+        <span class="c1"># remaining = self.push_distributed(remaining,</span>
+        <span class="c1">#                                   of_type = [&#39;Node&#39;, &#39;River&#39;])</span>
+
+        <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">)</span>
+
+        <span class="c1">#TODO backflow can cause mass balance errors here </span>
+
+        <span class="c1">#Update tank</span>
+        <span class="n">sent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span> <span class="n">remaining</span><span class="p">)</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_storage_exact</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">sent</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Miscalculated tank storage in discharge&#39;</span><span class="p">)</span>
+
+        <span class="c1">#Flood excess</span>
+        <span class="n">ponded</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_ponded</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">ponded</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+            <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">ponded</span><span class="p">,</span> 
+                                           <span class="n">of_type</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">],</span> 
+                                           <span class="n">tag</span> <span class="o">=</span> <span class="s1">&#39;Sewer&#39;</span><span class="p">)</span>
+            <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">reply_</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">force</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">reply_</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ponded water cant reenter&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite end_timestep behaviour to update tank variables</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">end_timestep</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">reinit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Call Tank reinit</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">reinit</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">capacity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">pipe_time</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">pipe_timearea</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="n">chamber_area</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">chamber_floor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">data_input_dict</span><span class="o">=</span><span class="p">{})</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sewer node that has a QueueTank and storage capacity. Think carefully 
+about parameterising this tank, because of course the amount of water that 
+can flow through a sewer in a timestep is different in reality than in a 
+steady state (e.g., a sewer that can handle a peak of 6m3/s in practice could 
+not handle 6 * 86400 m3 of water in a day because that water does not flow 
+uniformly over the day). </p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>node name</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>capacity</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Sewer tank capacity. Defaults to 0.</p></td>
+          <td>
+                <code>0</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pipe_time</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Number of timesteps to spend in the queue of 
+the sewer tank. Defaults to 0.</p></td>
+          <td>
+                <code>0</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pipe_timearea</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Time area diagram that enables flows to 
+take a range of different durations to 'traverse' the tank. The keys 
+of the dict are the number of timesteps while the values are the 
+proportion of flow. E.g., {0 : 0.7, 1 : 0.3} means 70% of flow takes 
+0 timesteps and 30% takes 1 timesteps. </p></td>
+          <td>
+                <code>{0: 1}</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>chamber_area</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Sewer tank area. Defaults to 1.</p></td>
+          <td>
+                <code>1</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>chamber_floor</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Sewer tank datum. Defaults to 10.</p></td>
+          <td>
+                <code>10</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>data_input_dict</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Dictionary of data inputs relevant for 
+the node (though I don't think it is used). Defaults to {}.</p></td>
+          <td>
+                <code>{}</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+      <p>NOTE that currently the queuetank either applies the pipe_timearea 
+(push_set_land) OR the pipe_time (push_set_sewer). Though this behaviour 
+could be changed by setting the number_of_timesteps property to pipe_time of 
+the sewer_tank and removing the pipe_time setting in push_set_sewer.</p>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>make_discharge</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                    <span class="n">name</span><span class="p">,</span>
+                    <span class="n">capacity</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                    <span class="n">pipe_time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">#Sewer to sewer travel time</span>
+                    <span class="n">pipe_timearea</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+                    <span class="n">chamber_area</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">chamber_floor</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                    <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{}):</span>
+    <span class="sd">&quot;&quot;&quot;Sewer node that has a QueueTank and storage capacity. Think carefully </span>
+<span class="sd">    about parameterising this tank, because of course the amount of water that </span>
+<span class="sd">    can flow through a sewer in a timestep is different in reality than in a </span>
+<span class="sd">    steady state (e.g., a sewer that can handle a peak of 6m3/s in practice could </span>
+<span class="sd">    not handle 6 * 86400 m3 of water in a day because that water does not flow </span>
+<span class="sd">    uniformly over the day). </span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): node name</span>
+<span class="sd">        capacity (float, optional): Sewer tank capacity. Defaults to 0.</span>
+<span class="sd">        pipe_time (float, optional): Number of timesteps to spend in the queue of </span>
+<span class="sd">            the sewer tank. Defaults to 0.</span>
+<span class="sd">        pipe_timearea (dict, optional): Time area diagram that enables flows to </span>
+<span class="sd">            take a range of different durations to &#39;traverse&#39; the tank. The keys </span>
+<span class="sd">            of the dict are the number of timesteps while the values are the </span>
+<span class="sd">            proportion of flow. E.g., {0 : 0.7, 1 : 0.3} means 70% of flow takes </span>
+<span class="sd">            0 timesteps and 30% takes 1 timesteps. </span>
+<span class="sd">        chamber_area (float, optional): Sewer tank area. Defaults to 1.</span>
+<span class="sd">        chamber_floor (float, optional): Sewer tank datum. Defaults to 10.</span>
+<span class="sd">        data_input_dict (dict, optional): Dictionary of data inputs relevant for </span>
+<span class="sd">            the node (though I don&#39;t think it is used). Defaults to {}.</span>
+
+<span class="sd">    NOTE that currently the queuetank either applies the pipe_timearea </span>
+<span class="sd">    (push_set_land) OR the pipe_time (push_set_sewer). Though this behaviour </span>
+<span class="sd">    could be changed by setting the number_of_timesteps property to pipe_time of </span>
+<span class="sd">    the sewer_tank and removing the pipe_time setting in push_set_sewer.</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        make_discharge</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Set parameters</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pipe_time</span> <span class="o">=</span> <span class="n">pipe_time</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pipe_timearea</span> <span class="o">=</span> <span class="n">pipe_timearea</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chamber_area</span> <span class="o">=</span> <span class="n">chamber_area</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chamber_floor</span> <span class="o">=</span> <span class="n">chamber_floor</span>
+    <span class="c1">#TODO I don&#39;t think this is used..</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span>
+
+    <span class="c1">#Update args</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1">#Update handlers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Sewer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_sewer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_sewer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_land</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;Demand&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_land</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Sewer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Demand&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_sewer</span>
+
+    <span class="c1">#Create sewer tank</span>
+    <span class="c1">#TODO this might work better as a ResidenceTank (maybe also decay?)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span> <span class="o">=</span> <span class="n">QueueTank</span><span class="p">(</span><span class="n">capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span><span class="p">,</span>
+                                <span class="n">number_of_timesteps</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                                <span class="n">datum</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">chamber_floor</span><span class="p">,</span>
+                                <span class="n">area</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">chamber_area</span><span class="p">)</span>
+
+    <span class="c1">#Mass balance</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_ds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">ds</span><span class="p">())</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.end_timestep" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">end_timestep</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Overwrite end_timestep behaviour to update tank variables</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Overwrite end_timestep behaviour to update tank variables</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">end_timestep</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.make_discharge" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">make_discharge</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Function to trigger downstream sewer flow. Updates sewer tank travel time, pushes to WWTW, then sewer, then CSO. May flood land if, after these attempts, the sewer tank storage is above capacity</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">make_discharge</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to trigger downstream sewer flow. Updates sewer tank travel time, pushes to WWTW, then sewer, then CSO. May flood land if, after these attempts, the sewer tank storage is above capacity</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">backflow</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">internal_arc</span><span class="o">.</span><span class="n">update_queue</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;push&#39;</span><span class="p">)</span>
+    <span class="c1">#TODO... do I need to do anything with this backflow... does it ever happen?</span>
+    <span class="c1">#Discharge to Sewer if possible</span>
+    <span class="c1"># remaining = self.push_distributed(self.sewer_tank.active_storage,</span>
+    <span class="c1">#                                 of_type = &#39;Sewer&#39;,</span>
+    <span class="c1">#                                 tag = &#39;Sewer&#39;)</span>
+
+    <span class="c1"># #Discharge to WWTW if possible</span>
+    <span class="c1"># remaining = self.push_distributed(remaining,</span>
+    <span class="c1">#                                 of_type = &#39;WWTW&#39;,</span>
+    <span class="c1">#                                 tag = &#39;Sewer&#39;)</span>
+
+
+    <span class="c1"># #CSO discharge</span>
+    <span class="c1"># remaining = self.push_distributed(remaining,</span>
+    <span class="c1">#                                   of_type = [&#39;Node&#39;, &#39;River&#39;])</span>
+
+    <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">)</span>
+
+    <span class="c1">#TODO backflow can cause mass balance errors here </span>
+
+    <span class="c1">#Update tank</span>
+    <span class="n">sent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">active_storage</span><span class="p">,</span> <span class="n">remaining</span><span class="p">)</span>
+    <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_storage_exact</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">sent</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Miscalculated tank storage in discharge&#39;</span><span class="p">)</span>
+
+    <span class="c1">#Flood excess</span>
+    <span class="n">ponded</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">pull_ponded</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">ponded</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+        <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">ponded</span><span class="p">,</span> 
+                                       <span class="n">of_type</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Land&#39;</span><span class="p">],</span> 
+                                       <span class="n">tag</span> <span class="o">=</span> <span class="s1">&#39;Sewer&#39;</span><span class="p">)</span>
+        <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">reply_</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">force</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">reply_</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ponded water cant reenter&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.push_check_sewer" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">push_check_sewer</span><span class="p">(</span><span class="n">vqip</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Generic push check, simply looks at excess</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP that can be used to limit the volume in 
+the return value (only volume key is used). Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>excess</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Sewer tank excess</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">push_check_sewer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generic push check, simply looks at excess</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict, optional): A VQIP that can be used to limit the volume in </span>
+<span class="sd">            the return value (only volume key is used). Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        excess (dict): Sewer tank excess</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Get excess</span>
+    <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">get_excess</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">vqip</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">excess</span>
+    <span class="c1">#Limit respone to vqip volume</span>
+    <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">excess</span><span class="p">,</span> 
+                                   <span class="nb">min</span><span class="p">(</span><span class="n">excess</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">excess</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.push_set_land" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">push_set_land</span><span class="p">(</span><span class="n">vqip</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Push request that applies pipe_timearea (see <strong>init</strong> for description). As 
+with push_set_sewer, push is also forced. Used to receive flow from land or 
+demand that is assumed to occur widely across some kind of sewer catchment.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount to be pushed</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount that was not received</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">push_set_land</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Push request that applies pipe_timearea (see __init__ for description). As </span>
+<span class="sd">    with push_set_sewer, push is also forced. Used to receive flow from land or </span>
+<span class="sd">    demand that is assumed to occur widely across some kind of sewer catchment.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict): A VQIP amount to be pushed</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A VQIP amount that was not received</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Land/demand to sewer push, update queued tank</span>
+
+    <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+    <span class="c1">#Iterate over timearea diagram</span>
+    <span class="k">for</span> <span class="n">time</span><span class="p">,</span> <span class="n">normalised</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe_timearea</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">vqip_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">vqip</span><span class="p">,</span> 
+                                   <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">normalised</span><span class="p">)</span>
+        <span class="n">reply_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">vqip_</span><span class="p">,</span>
+                                              <span class="n">time</span> <span class="o">=</span> <span class="n">time</span><span class="p">)</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">reply_</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">reply</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.push_set_sewer" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">push_set_sewer</span><span class="p">(</span><span class="n">vqip</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Generic push request setting that implements basic queue travel time (it 
+does NOT implement timearea travel time). Updates the sewer tank storage. 
+Assumes that the inflow arc has accurately calculated capacity with 
+push_check_sewer, thus the water is forced.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount of water to push</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount of water that was not received</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">push_set_sewer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generic push request setting that implements basic queue travel time (it </span>
+<span class="sd">    does NOT implement timearea travel time). Updates the sewer tank storage. </span>
+<span class="sd">    Assumes that the inflow arc has accurately calculated capacity with </span>
+<span class="sd">    push_check_sewer, thus the water is forced.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict): A VQIP amount of water to push</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A VQIP amount of water that was not received</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Sewer to sewer push, update queued tank</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">push_storage</span><span class="p">(</span><span class="n">vqip</span><span class="p">,</span> 
+                                        <span class="n">time</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe_time</span>
+                                        <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.sewer.Sewer.reinit" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">reinit</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Call Tank reinit</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\sewer.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">reinit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Call Tank reinit</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">sewer_tank</span><span class="o">.</span><span class="n">reinit</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.39f04ddb.min.js"></script>
+      
+    
+  </body>
+</html>

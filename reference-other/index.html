@@ -1,0 +1,3979 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.5.2">
+    
+    
+      
+        <title>API Reference - Other Components - WSIMOD docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f9400aa.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference-other-components" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="WSIMOD docs" class="md-header__button md-logo" aria-label="WSIMOD docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WSIMOD docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference - Other Components
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="WSIMOD docs" class="md-nav__button md-logo" aria-label="WSIMOD docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    WSIMOD docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paper/paper/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/" class="md-nav__link">
+        How to guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        API reference
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demo/scripts/quickstart_demo/" class="md-nav__link">
+        Quickstart (.py)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coverage/" class="md-nav__link">
+        Coverage report
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment" class="md-nav__link">
+    wsimod.nodes.catchment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment" class="md-nav__link">
+    Catchment
+  </a>
+  
+    <nav class="md-nav" aria-label="Catchment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.end_timestep_" class="md-nav__link">
+    end_timestep_()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.get_avail" class="md-nav__link">
+    get_avail()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.get_flow" class="md-nav__link">
+    get_flow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.pull_check_abstraction" class="md-nav__link">
+    pull_check_abstraction()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.pull_set_abstraction" class="md-nav__link">
+    pull_set_abstraction()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.catchment.Catchment.route" class="md-nav__link">
+    route()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand" class="md-nav__link">
+    wsimod.nodes.demand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.Demand" class="md-nav__link">
+    Demand
+  </a>
+  
+    <nav class="md-nav" aria-label="Demand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.Demand.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.Demand.create_demand" class="md-nav__link">
+    create_demand()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.Demand.end_timestep" class="md-nav__link">
+    end_timestep()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.Demand.get_demand" class="md-nav__link">
+    get_demand()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.NonResidentialDemand" class="md-nav__link">
+    NonResidentialDemand
+  </a>
+  
+    <nav class="md-nav" aria-label="NonResidentialDemand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.NonResidentialDemand.get_demand" class="md-nav__link">
+    get_demand()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand" class="md-nav__link">
+    ResidentialDemand
+  </a>
+  
+    <nav class="md-nav" aria-label="ResidentialDemand">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand.apply_gardening_pollutants" class="md-nav__link">
+    apply_gardening_pollutants()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand.excess_to_garden_demand" class="md-nav__link">
+    excess_to_garden_demand()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand.get_demand" class="md-nav__link">
+    get_demand()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand.get_garden_demand" class="md-nav__link">
+    get_garden_demand()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.demand.ResidentialDemand.get_house_demand" class="md-nav__link">
+    get_house_demand()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution" class="md-nav__link">
+    wsimod.nodes.distribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.Distribution" class="md-nav__link">
+    Distribution
+  </a>
+  
+    <nav class="md-nav" aria-label="Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.Distribution.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.UnlimitedDistribution" class="md-nav__link">
+    UnlimitedDistribution
+  </a>
+  
+    <nav class="md-nav" aria-label="UnlimitedDistribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.UnlimitedDistribution.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.UnlimitedDistribution.end_timestep" class="md-nav__link">
+    end_timestep()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.distribution.UnlimitedDistribution.pull_set_unlimited" class="md-nav__link">
+    pull_set_unlimited()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.waste" class="md-nav__link">
+    wsimod.nodes.waste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsimod.nodes.waste.Waste" class="md-nav__link">
+    Waste
+  </a>
+  
+    <nav class="md-nav" aria-label="Waste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.waste.Waste.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.waste.Waste.push_check_accept" class="md-nav__link">
+    push_check_accept()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsimod.nodes.waste.Waste.push_set_accept" class="md-nav__link">
+    push_set_accept()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="api-reference-other-components">API Reference - Other Components</h1>
+<p>This section of the documentation provides a reference for the API of the  nodes.catchment, nodes.demand, nodes.distribution, and nodes.waste modules.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wsimod.nodes.catchment"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Created on Mon Nov 15 14:20:36 2021</p>
+<p>@author: bdobson</p>
+<p>Converted to totals on 2022-05-03</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.catchment.Catchment" class="doc doc-heading">
+        <code>Catchment</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.nodes.Node" href="../reference-nodes/#wsimod.nodes.nodes.Node">Node</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Catchment</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                        <span class="n">name</span><span class="p">,</span>
+                        <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{},</span>
+                        <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Node that reads input data to create VQIPs that are pushed downstream and </span>
+<span class="sd">        tracks abstractions made from the node, adjusting pushes accordingly.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name (str): Node name</span>
+<span class="sd">            data_input_dict (dict, optional): Dictionary of data inputs relevant for </span>
+<span class="sd">                the node. Keys are tuples where first value is the name of the </span>
+<span class="sd">                variable to read from the dict and the second value is the time. </span>
+<span class="sd">                Defaults to {}.</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            route</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">#Update args</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span>
+
+        <span class="c1">#Update handlers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_abstraction</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_abstraction</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="c1">#Mass balance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_flow</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">end_timestep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_timestep_</span>
+
+    <span class="k">def</span> <span class="nf">get_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Read volume data, read pollutant data, convert additibve pollutants</span>
+<span class="sd">        from kg/m3 to kg</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            vqip (dict): Return read data as a VQIP</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO (if used) - note that if flow is &lt; float accuracy then it won&#39;t </span>
+        <span class="c1">#get pushed, and the pollutants will &#39;disappear&#39;, causing a mass balance error</span>
+        <span class="n">vqip</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;volume&#39;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span><span class="p">[(</span><span class="s1">&#39;flow&#39;</span><span class="p">,</span>
+                                               <span class="bp">self</span><span class="o">.</span><span class="n">t</span><span class="p">)]}</span>
+        <span class="k">for</span> <span class="n">pollutant</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">POLLUTANTS</span><span class="p">:</span>
+            <span class="n">vqip</span><span class="p">[</span><span class="n">pollutant</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span><span class="p">[(</span><span class="n">pollutant</span><span class="p">,</span>
+                                                   <span class="bp">self</span><span class="o">.</span><span class="n">t</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">pollutant</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">ADDITIVE_POLLUTANTS</span><span class="p">:</span>
+            <span class="n">vqip</span><span class="p">[</span><span class="n">pollutant</span><span class="p">]</span> <span class="o">*=</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">vqip</span>
+
+    <span class="k">def</span> <span class="nf">route</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send any water that has not already been abstracted downstream</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Get amount of water</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+        <span class="c1">#Route excess flow onwards</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> <span class="n">of_type</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span> 
+                                                        <span class="s1">&#39;River&#39;</span><span class="p">,</span> 
+                                                        <span class="s1">&#39;Waste&#39;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span><span class="p">,</span> <span class="n">reply</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">reply</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+            <span class="k">pass</span>
+            <span class="c1"># print(&#39;Catchment unable to route&#39;)</span>
+
+    <span class="k">def</span> <span class="nf">get_avail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Water available for abstraction (Read data and subtract pre-existing </span>
+<span class="sd">        abstractions)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            avail (dict): A VQIP of water available for abstraction</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1">#Get available vqip</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_flow</span><span class="p">()</span>
+
+        <span class="c1">#Remove abstractions already made</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">arc</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">out_arcs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> <span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">arc</span><span class="o">.</span><span class="n">vqip_in</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">avail</span>
+
+    <span class="k">def</span> <span class="nf">pull_check_abstraction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check wrapper for get_avail that updates response if VQIP is given</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict, optional): A VQIP that is compared with get_avail and the </span>
+<span class="sd">                minimum is returned. Only the &#39;volume&#39; key is used. Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            avail (dict): A VQIP of water available for abstraction</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Respond to abstraction check request</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">vqip</span><span class="p">:</span>
+            <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> 
+                                       <span class="nb">min</span><span class="p">(</span><span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="n">avail</span>
+
+    <span class="k">def</span> <span class="nf">pull_set_abstraction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Request set wrapper for get_avail where VQIP is specified</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict): A VQIP of water to pull. Only the &#39;volume&#39; key is used.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            avail (dict): A VQIP of water abstracted</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Respond to abstraction set request</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> 
+                                       <span class="nb">min</span><span class="p">(</span><span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="n">avail</span>
+
+    <span class="k">def</span> <span class="nf">end_timestep_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reset unrouted water</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">data_input_dict</span><span class="o">=</span><span class="p">{})</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Node that reads input data to create VQIPs that are pushed downstream and 
+tracks abstractions made from the node, adjusting pushes accordingly.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Node name</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>data_input_dict</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Dictionary of data inputs relevant for 
+the node. Keys are tuples where first value is the name of the 
+variable to read from the dict and the second value is the time. 
+Defaults to {}.</p></td>
+          <td>
+                <code>{}</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>route</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+                    <span class="n">name</span><span class="p">,</span>
+                    <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{},</span>
+                    <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Node that reads input data to create VQIPs that are pushed downstream and </span>
+<span class="sd">    tracks abstractions made from the node, adjusting pushes accordingly.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): Node name</span>
+<span class="sd">        data_input_dict (dict, optional): Dictionary of data inputs relevant for </span>
+<span class="sd">            the node. Keys are tuples where first value is the name of the </span>
+<span class="sd">            variable to read from the dict and the second value is the time. </span>
+<span class="sd">            Defaults to {}.</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        route</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#Update args</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span>
+
+    <span class="c1">#Update handlers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_abstraction</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_abstraction</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+    <span class="c1">#Mass balance</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_flow</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">end_timestep</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_timestep_</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.end_timestep_" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">end_timestep_</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Reset unrouted water</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">end_timestep_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reset unrouted water</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.get_avail" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_avail</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Water available for abstraction (Read data and subtract pre-existing 
+abstractions)</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>avail</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of water available for abstraction</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_avail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Water available for abstraction (Read data and subtract pre-existing </span>
+<span class="sd">    abstractions)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        avail (dict): A VQIP of water available for abstraction</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#Get available vqip</span>
+    <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_flow</span><span class="p">()</span>
+
+    <span class="c1">#Remove abstractions already made</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">arc</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">out_arcs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> <span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">arc</span><span class="o">.</span><span class="n">vqip_in</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">avail</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.get_flow" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_flow</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Read volume data, read pollutant data, convert additibve pollutants
+from kg/m3 to kg</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>vqip</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Return read data as a VQIP</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read volume data, read pollutant data, convert additibve pollutants</span>
+<span class="sd">    from kg/m3 to kg</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        vqip (dict): Return read data as a VQIP</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO (if used) - note that if flow is &lt; float accuracy then it won&#39;t </span>
+    <span class="c1">#get pushed, and the pollutants will &#39;disappear&#39;, causing a mass balance error</span>
+    <span class="n">vqip</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;volume&#39;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span><span class="p">[(</span><span class="s1">&#39;flow&#39;</span><span class="p">,</span>
+                                           <span class="bp">self</span><span class="o">.</span><span class="n">t</span><span class="p">)]}</span>
+    <span class="k">for</span> <span class="n">pollutant</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">POLLUTANTS</span><span class="p">:</span>
+        <span class="n">vqip</span><span class="p">[</span><span class="n">pollutant</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_input_dict</span><span class="p">[(</span><span class="n">pollutant</span><span class="p">,</span>
+                                               <span class="bp">self</span><span class="o">.</span><span class="n">t</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">pollutant</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">ADDITIVE_POLLUTANTS</span><span class="p">:</span>
+        <span class="n">vqip</span><span class="p">[</span><span class="n">pollutant</span><span class="p">]</span> <span class="o">*=</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.pull_check_abstraction" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">pull_check_abstraction</span><span class="p">(</span><span class="n">vqip</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Check wrapper for get_avail that updates response if VQIP is given</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP that is compared with get_avail and the 
+minimum is returned. Only the 'volume' key is used. Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>avail</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of water available for abstraction</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">pull_check_abstraction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Check wrapper for get_avail that updates response if VQIP is given</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict, optional): A VQIP that is compared with get_avail and the </span>
+<span class="sd">            minimum is returned. Only the &#39;volume&#39; key is used. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        avail (dict): A VQIP of water available for abstraction</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Respond to abstraction check request</span>
+    <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">vqip</span><span class="p">:</span>
+        <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> 
+                                   <span class="nb">min</span><span class="p">(</span><span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+
+    <span class="k">return</span> <span class="n">avail</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.pull_set_abstraction" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">pull_set_abstraction</span><span class="p">(</span><span class="n">vqip</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Request set wrapper for get_avail where VQIP is specified</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of water to pull. Only the 'volume' key is used.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>avail</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of water abstracted</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">pull_set_abstraction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Request set wrapper for get_avail where VQIP is specified</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict): A VQIP of water to pull. Only the &#39;volume&#39; key is used.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        avail (dict): A VQIP of water abstracted</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Respond to abstraction set request</span>
+    <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+    <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> 
+                                   <span class="nb">min</span><span class="p">(</span><span class="n">avail</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">],</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]))</span>
+
+    <span class="k">return</span> <span class="n">avail</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.catchment.Catchment.route" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">route</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Send any water that has not already been abstracted downstream</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\catchment.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">route</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Send any water that has not already been abstracted downstream</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Get amount of water</span>
+    <span class="n">avail</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_avail</span><span class="p">()</span>
+    <span class="c1">#Route excess flow onwards</span>
+    <span class="n">reply</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">avail</span><span class="p">,</span> <span class="n">of_type</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Node&#39;</span><span class="p">,</span> 
+                                                    <span class="s1">&#39;River&#39;</span><span class="p">,</span> 
+                                                    <span class="s1">&#39;Waste&#39;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">unrouted_water</span><span class="p">,</span> <span class="n">reply</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">reply</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+        <span class="k">pass</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wsimod.nodes.demand"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Created on Mon Nov 15 14:20:36 2021</p>
+<p>@author: bdobson</p>
+<p>Converted to totals BD 2022-05-03</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.demand.Demand" class="doc doc-heading">
+        <code>Demand</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.nodes.Node" href="../reference-nodes/#wsimod.nodes.nodes.Node">Node</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Demand</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                        <span class="n">name</span><span class="p">,</span>
+                        <span class="n">population</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                        <span class="n">pollutant_load</span> <span class="o">=</span> <span class="p">{},</span>
+                        <span class="n">per_capita</span> <span class="o">=</span> <span class="mf">0.12</span><span class="p">,</span>
+                        <span class="n">gardening_efficiency</span> <span class="o">=</span> <span class="mf">0.6</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">,</span> <span class="c1">#Watering efficiency by irrigated area</span>
+                        <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{},</span> <span class="c1">#For temperature</span>
+                        <span class="n">constant_temp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+                        <span class="n">constant_weighting</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
+                        <span class="n">constant_demand</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Node that generates and moves water associated with population. </span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name (str): node name</span>
+<span class="sd">            population (float, optional): population of node. Defaults to 1.</span>
+<span class="sd">            pollutant_load (dict, optional): Mass per person per timestep of </span>
+<span class="sd">                different pollutants generated. Defaults to {}.</span>
+<span class="sd">            per_capita (float, optional): Volume per person per timestep of water </span>
+<span class="sd">                used. Defaults to 0.12.</span>
+<span class="sd">            gardening_efficiency (float, optional): Value between 0 and 1 that </span>
+<span class="sd">                translates irrigation demand from GardenSurface into water requested </span>
+<span class="sd">                from the distribution network. Should account for percent of garden </span>
+<span class="sd">                that is irrigated and the efficacy of people in meeting their garden </span>
+<span class="sd">                water demand. Defaults to 0.6*0.7.</span>
+<span class="sd">            data_input_dict (dict, optional):  Dictionary of data inputs relevant for </span>
+<span class="sd">                the node (temperature). Keys are tuples where first value is the name of </span>
+<span class="sd">                the variable to read from the dict and the second value is the </span>
+<span class="sd">                time. Defaults to {}</span>
+<span class="sd">            constant_temp (float, optional): A constant temperature associated with </span>
+<span class="sd">                generated water. Defaults to 30</span>
+<span class="sd">            constant_weighting (float, optional): Proportion of temperature that is </span>
+<span class="sd">                made up from by cconstant_temp. Defaults to 0.2.</span>
+<span class="sd">            constant_demand (float, optional): A constant portion of demand if no subclass</span>
+<span class="sd">                is used. Defaults to 0.</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            create_demand</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO should temperature be defined in pollutant dict?</span>
+        <span class="c1">#TODO a lot of this should be moved to ResidentialDemand</span>
+        <span class="c1">#Assign parameters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gardening_efficiency</span> <span class="o">=</span> <span class="n">gardening_efficiency</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">population</span> <span class="o">=</span> <span class="n">population</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">per_capita</span> <span class="o">=</span> <span class="n">per_capita</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span> <span class="o">=</span> <span class="n">pollutant_load</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span> <span class="o">=</span> <span class="n">constant_weighting</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constant_temp</span> <span class="o">=</span> <span class="n">constant_temp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constant_demand</span> <span class="o">=</span> <span class="n">constant_demand</span>
+
+        <span class="c1">#Update args</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span><span class="p">)</span>
+        <span class="c1">#Update handlers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_deny</span>
+
+        <span class="c1">#Initialise states</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span> <span class="c1">#ew</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+        <span class="c1">#Mass balance</span>
+        <span class="c1"># Because we assume demand is always satisfied</span>
+        <span class="c1"># received water &#39;disappears&#39; for mass balance</span>
+        <span class="c1"># and consumed water &#39;appears&#39; (this makes)</span>
+        <span class="c1"># introduction of pollutants easy</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span><span class="p">)</span> 
+
+    <span class="k">def</span> <span class="nf">create_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Function to call get_demand, which should return a dict with keys that </span>
+<span class="sd">        match the keys in directions. A dict that determines how to push_distributed </span>
+<span class="sd">        the generated wastewater/garden irrigation. Water is drawn from attached </span>
+<span class="sd">        nodes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_demand</span><span class="p">()</span>
+        <span class="n">total_requested</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">dem</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="n">total_requested</span> <span class="o">+=</span> <span class="n">dem</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_distributed</span><span class="p">({</span><span class="s1">&#39;volume&#39;</span> <span class="p">:</span> <span class="n">total_requested</span><span class="p">})</span>
+        <span class="c1">#TODO Currently just assume all water is received and then pushed onwards</span>
+
+        <span class="n">directions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;garden&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Demand&#39;</span><span class="p">,</span>
+                                           <span class="s1">&#39;Garden&#39;</span><span class="p">),</span>
+                                  <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;Land&#39;</span><span class="p">},</span>
+                      <span class="s1">&#39;house&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="s1">&#39;Demand&#39;</span><span class="p">,</span>
+                                 <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;Sewer&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;default&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span>
+                                     <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="kc">None</span><span class="p">}}</span>
+
+
+
+        <span class="c1">#Send water where it needs to go</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+            <span class="c1">#Distribute</span>
+            <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">item</span><span class="p">,</span>
+                                              <span class="n">of_type</span> <span class="o">=</span> <span class="n">directions</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s1">&#39;of_type&#39;</span><span class="p">],</span>
+                                              <span class="n">tag</span> <span class="o">=</span> <span class="n">directions</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s1">&#39;tag&#39;</span><span class="p">]</span>
+                                              <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span><span class="p">,</span> <span class="n">remaining</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">remaining</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Demand not able to push&#39;</span><span class="p">)</span>
+
+
+        <span class="c1">#Update for mass balance</span>
+        <span class="k">for</span> <span class="n">dem</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span><span class="p">,</span> 
+                                              <span class="n">dem</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Holder function to enable constant demand generation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A VQIP that will contain constant demand</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO read/gen demand</span>
+        <span class="n">pol</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_demand</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">pol</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;default&#39;</span> <span class="p">:</span> <span class="n">pol</span><span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reset state variable trackers</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.Demand.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">population</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">pollutant_load</span><span class="o">=</span><span class="p">{},</span> <span class="n">per_capita</span><span class="o">=</span><span class="mf">0.12</span><span class="p">,</span> <span class="n">gardening_efficiency</span><span class="o">=</span><span class="mf">0.6</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">data_input_dict</span><span class="o">=</span><span class="p">{},</span> <span class="n">constant_temp</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">constant_weighting</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">constant_demand</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Node that generates and moves water associated with population. </p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>node name</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>population</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>population of node. Defaults to 1.</p></td>
+          <td>
+                <code>1</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pollutant_load</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Mass per person per timestep of 
+different pollutants generated. Defaults to {}.</p></td>
+          <td>
+                <code>{}</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>per_capita</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Volume per person per timestep of water 
+used. Defaults to 0.12.</p></td>
+          <td>
+                <code>0.12</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>gardening_efficiency</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Value between 0 and 1 that 
+translates irrigation demand from GardenSurface into water requested 
+from the distribution network. Should account for percent of garden 
+that is irrigated and the efficacy of people in meeting their garden 
+water demand. Defaults to 0.6*0.7.</p></td>
+          <td>
+                <code>0.6 * 0.7</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>data_input_dict</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>Dictionary of data inputs relevant for 
+the node (temperature). Keys are tuples where first value is the name of 
+the variable to read from the dict and the second value is the 
+time. Defaults to {}</p></td>
+          <td>
+                <code>{}</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>constant_temp</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A constant temperature associated with 
+generated water. Defaults to 30</p></td>
+          <td>
+                <code>30</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>constant_weighting</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Proportion of temperature that is 
+made up from by cconstant_temp. Defaults to 0.2.</p></td>
+          <td>
+                <code>0.2</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>constant_demand</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A constant portion of demand if no subclass
+is used. Defaults to 0.</p></td>
+          <td>
+                <code>0</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>create_demand</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                    <span class="n">name</span><span class="p">,</span>
+                    <span class="n">population</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">pollutant_load</span> <span class="o">=</span> <span class="p">{},</span>
+                    <span class="n">per_capita</span> <span class="o">=</span> <span class="mf">0.12</span><span class="p">,</span>
+                    <span class="n">gardening_efficiency</span> <span class="o">=</span> <span class="mf">0.6</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">,</span> <span class="c1">#Watering efficiency by irrigated area</span>
+                    <span class="n">data_input_dict</span> <span class="o">=</span> <span class="p">{},</span> <span class="c1">#For temperature</span>
+                    <span class="n">constant_temp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span>
+                    <span class="n">constant_weighting</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
+                    <span class="n">constant_demand</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                    <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Node that generates and moves water associated with population. </span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): node name</span>
+<span class="sd">        population (float, optional): population of node. Defaults to 1.</span>
+<span class="sd">        pollutant_load (dict, optional): Mass per person per timestep of </span>
+<span class="sd">            different pollutants generated. Defaults to {}.</span>
+<span class="sd">        per_capita (float, optional): Volume per person per timestep of water </span>
+<span class="sd">            used. Defaults to 0.12.</span>
+<span class="sd">        gardening_efficiency (float, optional): Value between 0 and 1 that </span>
+<span class="sd">            translates irrigation demand from GardenSurface into water requested </span>
+<span class="sd">            from the distribution network. Should account for percent of garden </span>
+<span class="sd">            that is irrigated and the efficacy of people in meeting their garden </span>
+<span class="sd">            water demand. Defaults to 0.6*0.7.</span>
+<span class="sd">        data_input_dict (dict, optional):  Dictionary of data inputs relevant for </span>
+<span class="sd">            the node (temperature). Keys are tuples where first value is the name of </span>
+<span class="sd">            the variable to read from the dict and the second value is the </span>
+<span class="sd">            time. Defaults to {}</span>
+<span class="sd">        constant_temp (float, optional): A constant temperature associated with </span>
+<span class="sd">            generated water. Defaults to 30</span>
+<span class="sd">        constant_weighting (float, optional): Proportion of temperature that is </span>
+<span class="sd">            made up from by cconstant_temp. Defaults to 0.2.</span>
+<span class="sd">        constant_demand (float, optional): A constant portion of demand if no subclass</span>
+<span class="sd">            is used. Defaults to 0.</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        create_demand</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO should temperature be defined in pollutant dict?</span>
+    <span class="c1">#TODO a lot of this should be moved to ResidentialDemand</span>
+    <span class="c1">#Assign parameters</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">gardening_efficiency</span> <span class="o">=</span> <span class="n">gardening_efficiency</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">population</span> <span class="o">=</span> <span class="n">population</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">per_capita</span> <span class="o">=</span> <span class="n">per_capita</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span> <span class="o">=</span> <span class="n">pollutant_load</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span> <span class="o">=</span> <span class="n">constant_weighting</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">constant_temp</span> <span class="o">=</span> <span class="n">constant_temp</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">constant_demand</span> <span class="o">=</span> <span class="n">constant_demand</span>
+
+    <span class="c1">#Update args</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">data_input_dict</span><span class="p">)</span>
+    <span class="c1">#Update handlers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_deny</span>
+
+    <span class="c1">#Initialise states</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span> <span class="c1">#ew</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+    <span class="c1">#Mass balance</span>
+    <span class="c1"># Because we assume demand is always satisfied</span>
+    <span class="c1"># received water &#39;disappears&#39; for mass balance</span>
+    <span class="c1"># and consumed water &#39;appears&#39; (this makes)</span>
+    <span class="c1"># introduction of pollutants easy</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span><span class="p">)</span> 
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.Demand.create_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">create_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Function to call get_demand, which should return a dict with keys that 
+match the keys in directions. A dict that determines how to push_distributed 
+the generated wastewater/garden irrigation. Water is drawn from attached 
+nodes.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">create_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to call get_demand, which should return a dict with keys that </span>
+<span class="sd">    match the keys in directions. A dict that determines how to push_distributed </span>
+<span class="sd">    the generated wastewater/garden irrigation. Water is drawn from attached </span>
+<span class="sd">    nodes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_demand</span><span class="p">()</span>
+    <span class="n">total_requested</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">dem</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">total_requested</span> <span class="o">+=</span> <span class="n">dem</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_distributed</span><span class="p">({</span><span class="s1">&#39;volume&#39;</span> <span class="p">:</span> <span class="n">total_requested</span><span class="p">})</span>
+    <span class="c1">#TODO Currently just assume all water is received and then pushed onwards</span>
+
+    <span class="n">directions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;garden&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Demand&#39;</span><span class="p">,</span>
+                                       <span class="s1">&#39;Garden&#39;</span><span class="p">),</span>
+                              <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;Land&#39;</span><span class="p">},</span>
+                  <span class="s1">&#39;house&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="s1">&#39;Demand&#39;</span><span class="p">,</span>
+                             <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="s1">&#39;Sewer&#39;</span><span class="p">},</span>
+                    <span class="s1">&#39;default&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;tag&#39;</span> <span class="p">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span>
+                                 <span class="s1">&#39;of_type&#39;</span> <span class="p">:</span> <span class="kc">None</span><span class="p">}}</span>
+
+
+
+    <span class="c1">#Send water where it needs to go</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+        <span class="c1">#Distribute</span>
+        <span class="n">remaining</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_distributed</span><span class="p">(</span><span class="n">item</span><span class="p">,</span>
+                                          <span class="n">of_type</span> <span class="o">=</span> <span class="n">directions</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s1">&#39;of_type&#39;</span><span class="p">],</span>
+                                          <span class="n">tag</span> <span class="o">=</span> <span class="n">directions</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s1">&#39;tag&#39;</span><span class="p">]</span>
+                                          <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span><span class="p">,</span> <span class="n">remaining</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">remaining</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">constants</span><span class="o">.</span><span class="n">FLOAT_ACCURACY</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Demand not able to push&#39;</span><span class="p">)</span>
+
+
+    <span class="c1">#Update for mass balance</span>
+    <span class="k">for</span> <span class="n">dem</span> <span class="ow">in</span> <span class="n">demand</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span><span class="p">,</span> 
+                                          <span class="n">dem</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.Demand.end_timestep" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">end_timestep</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Reset state variable trackers</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reset state variable trackers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_demand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_backup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">total_received</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.Demand.get_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Holder function to enable constant demand generation</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP that will contain constant demand</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holder function to enable constant demand generation</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A VQIP that will contain constant demand</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO read/gen demand</span>
+    <span class="n">pol</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_demand</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">pol</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;default&#39;</span> <span class="p">:</span> <span class="n">pol</span><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.demand.NonResidentialDemand" class="doc doc-heading">
+        <code>NonResidentialDemand</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.demand.Demand" href="#wsimod.nodes.demand.Demand">Demand</a></code></p>
+
+  
+      <p>Holder class to enable non-residential demand generation</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">NonResidentialDemand</span><span class="p">(</span><span class="n">Demand</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holder class to enable non-residential demand generation</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Holder function</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A dict of VQIPs, where the keys match with directions </span>
+<span class="sd">                in Demand/create_demand</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;house&#39;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_demand</span><span class="p">()}</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.NonResidentialDemand.get_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Holder function</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A dict of VQIPs, where the keys match with directions 
+in Demand/create_demand</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holder function</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A dict of VQIPs, where the keys match with directions </span>
+<span class="sd">            in Demand/create_demand</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;house&#39;</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_demand</span><span class="p">()}</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.demand.ResidentialDemand" class="doc doc-heading">
+        <code>ResidentialDemand</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.demand.Demand" href="#wsimod.nodes.demand.Demand">Demand</a></code></p>
+
+  
+      <p>Subclass of demand with functions to handle internal and external water use</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">ResidentialDemand</span><span class="p">(</span><span class="n">Demand</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Subclass of demand with functions to handle internal and external water use</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c1">#Label as Demand class so that other nodes treat it the same</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="s1">&#39;Demand&#39;</span>
+
+    <span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overwrite get_demand and replace with custom functions</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A dict of VQIPs, where the keys match with directions </span>
+<span class="sd">                in Demand/create_demand</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">water_output</span> <span class="o">=</span> <span class="p">{}</span>        
+
+        <span class="n">water_output</span><span class="p">[</span><span class="s1">&#39;garden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_garden_demand</span><span class="p">()</span>        
+        <span class="n">water_output</span><span class="p">[</span><span class="s1">&#39;house&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_house_demand</span><span class="p">()</span>      
+
+        <span class="k">return</span> <span class="n">water_output</span>
+
+
+    <span class="k">def</span> <span class="nf">get_garden_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate garden water demand in the current timestep by get_connected</span>
+<span class="sd">        to all attached land nodes. This check should return garden water demand.</span>
+<span class="sd">        Applies irrigation coefficient. Can function when a single population node is </span>
+<span class="sd">        connected to multiple land nodes, however, the capacity and preferences of </span>
+<span class="sd">        arcs should be updated to reflect what is possible based on area.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            vqip (dict): A VQIP of garden water use (including pollutants) to be </span>
+<span class="sd">                pushed to land</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Get garden water demand</span>
+        <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_connected</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;push&#39;</span><span class="p">,</span>
+                                    <span class="n">of_type</span> <span class="o">=</span> <span class="s1">&#39;Land&#39;</span><span class="p">,</span> 
+                                    <span class="n">tag</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Demand&#39;</span><span class="p">,</span> 
+                                           <span class="s1">&#39;Garden&#39;</span><span class="p">)</span>
+                                    <span class="p">)[</span><span class="s1">&#39;avail&#39;</span><span class="p">]</span>
+
+        <span class="c1">#Apply garden_efficiency</span>
+        <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">excess_to_garden_demand</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span>
+
+        <span class="c1">#Apply any pollutants</span>
+        <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">apply_gardening_pollutants</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">vqip</span>
+
+    <span class="k">def</span> <span class="nf">apply_gardening_pollutants</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">excess</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Holder function to apply pollutants (i.e., presumably fertiliser) to the garden.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            excess (float): A volume of water applied to a garden</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A VQIP of water that includes pollutants to be sent to land</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO Fertilisers are currently applied in the land node... which is preferable?</span>
+        <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">excess</span>
+        <span class="k">return</span> <span class="n">vqip</span>
+
+
+    <span class="k">def</span> <span class="nf">excess_to_garden_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">excess</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Apply garden_efficiency</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            excess (float): Volume of water required to satisfy garden irrigation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (float): Amount of water actually applied to garden</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO Anything more than this needed?</span>
+        <span class="c1"># (yes - population presence if eventually included!)</span>
+
+        <span class="k">return</span> <span class="n">excess</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">gardening_efficiency</span>
+
+    <span class="k">def</span> <span class="nf">get_house_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Per capita calculations for household wastewater generation. Applies </span>
+<span class="sd">        weighted temperature calculation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): A VQIP containg foul water</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO water that is consumed but not sent onwards as foul</span>
+        <span class="c1">#Total water required</span>
+        <span class="n">consumption</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">population</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">per_capita</span>
+        <span class="c1">#Apply pollutants</span>
+        <span class="n">foul</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">copy_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span><span class="p">)</span>
+        <span class="c1">#Scale to population</span>
+        <span class="k">for</span> <span class="n">pol</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">ADDITIVE_POLLUTANTS</span><span class="p">:</span>
+            <span class="n">foul</span><span class="p">[</span><span class="n">pol</span><span class="p">]</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">population</span>
+        <span class="c1">#Update volume and temperature (which is weighted based on air temperature and constant_temp)</span>
+        <span class="n">foul</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">consumption</span>
+        <span class="n">foul</span><span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_data_input</span><span class="p">(</span><span class="s1">&#39;temperature&#39;</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_temp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span>
+        <span class="k">return</span> <span class="n">foul</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.ResidentialDemand.apply_gardening_pollutants" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">apply_gardening_pollutants</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Holder function to apply pollutants (i.e., presumably fertiliser) to the garden.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>excess</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A volume of water applied to a garden</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of water that includes pollutants to be sent to land</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">apply_gardening_pollutants</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">excess</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holder function to apply pollutants (i.e., presumably fertiliser) to the garden.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        excess (float): A volume of water applied to a garden</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A VQIP of water that includes pollutants to be sent to land</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO Fertilisers are currently applied in the land node... which is preferable?</span>
+    <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+    <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">excess</span>
+    <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.ResidentialDemand.excess_to_garden_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">excess_to_garden_demand</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Apply garden_efficiency</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>excess</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Volume of water required to satisfy garden irrigation</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Amount of water actually applied to garden</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">excess_to_garden_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">excess</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Apply garden_efficiency</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        excess (float): Volume of water required to satisfy garden irrigation</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (float): Amount of water actually applied to garden</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO Anything more than this needed?</span>
+    <span class="c1"># (yes - population presence if eventually included!)</span>
+
+    <span class="k">return</span> <span class="n">excess</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">gardening_efficiency</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.ResidentialDemand.get_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Overwrite get_demand and replace with custom functions</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A dict of VQIPs, where the keys match with directions 
+in Demand/create_demand</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Overwrite get_demand and replace with custom functions</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A dict of VQIPs, where the keys match with directions </span>
+<span class="sd">            in Demand/create_demand</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">water_output</span> <span class="o">=</span> <span class="p">{}</span>        
+
+    <span class="n">water_output</span><span class="p">[</span><span class="s1">&#39;garden&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_garden_demand</span><span class="p">()</span>        
+    <span class="n">water_output</span><span class="p">[</span><span class="s1">&#39;house&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_house_demand</span><span class="p">()</span>      
+
+    <span class="k">return</span> <span class="n">water_output</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.ResidentialDemand.get_garden_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_garden_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate garden water demand in the current timestep by get_connected
+to all attached land nodes. This check should return garden water demand.
+Applies irrigation coefficient. Can function when a single population node is 
+connected to multiple land nodes, however, the capacity and preferences of 
+arcs should be updated to reflect what is possible based on area.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>vqip</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP of garden water use (including pollutants) to be 
+pushed to land</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_garden_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calculate garden water demand in the current timestep by get_connected</span>
+<span class="sd">    to all attached land nodes. This check should return garden water demand.</span>
+<span class="sd">    Applies irrigation coefficient. Can function when a single population node is </span>
+<span class="sd">    connected to multiple land nodes, however, the capacity and preferences of </span>
+<span class="sd">    arcs should be updated to reflect what is possible based on area.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        vqip (dict): A VQIP of garden water use (including pollutants) to be </span>
+<span class="sd">            pushed to land</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Get garden water demand</span>
+    <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_connected</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;push&#39;</span><span class="p">,</span>
+                                <span class="n">of_type</span> <span class="o">=</span> <span class="s1">&#39;Land&#39;</span><span class="p">,</span> 
+                                <span class="n">tag</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Demand&#39;</span><span class="p">,</span> 
+                                       <span class="s1">&#39;Garden&#39;</span><span class="p">)</span>
+                                <span class="p">)[</span><span class="s1">&#39;avail&#39;</span><span class="p">]</span>
+
+    <span class="c1">#Apply garden_efficiency</span>
+    <span class="n">excess</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">excess_to_garden_demand</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span>
+
+    <span class="c1">#Apply any pollutants</span>
+    <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">apply_gardening_pollutants</span><span class="p">(</span><span class="n">excess</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.demand.ResidentialDemand.get_house_demand" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_house_demand</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Per capita calculations for household wastewater generation. Applies 
+weighted temperature calculation</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP containg foul water</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\demand.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_house_demand</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Per capita calculations for household wastewater generation. Applies </span>
+<span class="sd">    weighted temperature calculation</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): A VQIP containg foul water</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO water that is consumed but not sent onwards as foul</span>
+    <span class="c1">#Total water required</span>
+    <span class="n">consumption</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">population</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">per_capita</span>
+    <span class="c1">#Apply pollutants</span>
+    <span class="n">foul</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">copy_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pollutant_load</span><span class="p">)</span>
+    <span class="c1">#Scale to population</span>
+    <span class="k">for</span> <span class="n">pol</span> <span class="ow">in</span> <span class="n">constants</span><span class="o">.</span><span class="n">ADDITIVE_POLLUTANTS</span><span class="p">:</span>
+        <span class="n">foul</span><span class="p">[</span><span class="n">pol</span><span class="p">]</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">population</span>
+    <span class="c1">#Update volume and temperature (which is weighted based on air temperature and constant_temp)</span>
+    <span class="n">foul</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">consumption</span>
+    <span class="n">foul</span><span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_data_input</span><span class="p">(</span><span class="s1">&#39;temperature&#39;</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_temp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_weighting</span>
+    <span class="k">return</span> <span class="n">foul</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wsimod.nodes.distribution"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Created on Sun Aug 14 16:27:14 2022</p>
+<p>@author: bdobson</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.distribution.Distribution" class="doc doc-heading">
+        <code>Distribution</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.nodes.Node" href="../reference-nodes/#wsimod.nodes.nodes.Node">Node</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Distribution</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A Node that cannot be pushed to. Intended to pass calls to FWTW - though this currently relies on the user to connect it properly</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c1">#Update handlers        </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_deny</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.distribution.Distribution.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>A Node that cannot be pushed to. Intended to pass calls to FWTW - though this currently relies on the user to connect it properly</p>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>None</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A Node that cannot be pushed to. Intended to pass calls to FWTW - though this currently relies on the user to connect it properly</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="c1">#Update handlers        </span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_deny</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.distribution.UnlimitedDistribution" class="doc doc-heading">
+        <code>UnlimitedDistribution</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.distribution.Distribution" href="#wsimod.nodes.distribution.Distribution">Distribution</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">UnlimitedDistribution</span><span class="p">(</span><span class="n">Distribution</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A distribution node that provides unlimited water while tracking pass </span>
+<span class="sd">        balance</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c1">#Update handlers        </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_unlimited</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="n">constants</span><span class="o">.</span><span class="n">UNBOUNDED_CAPACITY</span><span class="p">)</span>
+
+        <span class="c1">#States</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">pull_set_unlimited</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Respond that VQIP was fulfilled and update state variables for mass balance</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict): A VQIP amount to request</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            vqip (dict): A VQIP amount that was supplied</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#TODO maybe need some pollutant concentrations?</span>
+        <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">supplied</span><span class="p">,</span> <span class="n">vqip</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">vqip</span>
+
+    <span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update state variables</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.distribution.UnlimitedDistribution.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>A distribution node that provides unlimited water while tracking pass 
+balance</p>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>None</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A distribution node that provides unlimited water while tracking pass </span>
+<span class="sd">    balance</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="c1">#Update handlers        </span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_unlimited</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="n">constants</span><span class="o">.</span><span class="n">UNBOUNDED_CAPACITY</span><span class="p">)</span>
+
+    <span class="c1">#States</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_in</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="k">lambda</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.distribution.UnlimitedDistribution.end_timestep" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">end_timestep</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Update state variables</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">end_timestep</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Update state variables</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.distribution.UnlimitedDistribution.pull_set_unlimited" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">pull_set_unlimited</span><span class="p">(</span><span class="n">vqip</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Respond that VQIP was fulfilled and update state variables for mass balance</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount to request</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>vqip</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP amount that was supplied</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\distribution.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">pull_set_unlimited</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Respond that VQIP was fulfilled and update state variables for mass balance</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict): A VQIP amount to request</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        vqip (dict): A VQIP amount that was supplied</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#TODO maybe need some pollutant concentrations?</span>
+    <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v_change_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">(),</span> <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">supplied</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sum_vqip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">supplied</span><span class="p">,</span> <span class="n">vqip</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wsimod.nodes.waste"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Created on Mon Nov 15 14:20:36 2021</p>
+<p>@author: bdobson</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="wsimod.nodes.waste.Waste" class="doc doc-heading">
+        <code>Waste</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wsimod.nodes.nodes.Node" href="../reference-nodes/#wsimod.nodes.nodes.Node">Node</a></code></p>
+
+
+
+        <details class="quote">
+          <summary>Source code in <code>wsimod\nodes\waste.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Waste</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Outlet node that can receive any amount of water by pushes</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name (str): Node name</span>
+
+<span class="sd">        Functions intended to call in orchestration:</span>
+<span class="sd">            None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Update args</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="c1">#Update handlers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_deny</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_accept</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_accept</span>
+
+        <span class="c1">#Mass balance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_in</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">push_set_accept</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Push set function that accepts all water</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict): A VQIP that has been pushed (ignored)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): An empty VQIP, indicating all water was received</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">push_check_accept</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Push check function that accepts all water</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            vqip (dict, optional): A VQIP that has been pushed (ignored)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            (dict): VQIP or an unbounded capacity, indicating all water can be received</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">vqip</span><span class="p">:</span>
+            <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+            <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">constants</span><span class="o">.</span><span class="n">UNBOUNDED_CAPACITY</span>
+        <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.waste.Waste.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Outlet node that can receive any amount of water by pushes</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Node name</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<details class="functions-intended-to-call-in-orchestration">
+  <summary>Functions intended to call in orchestration</summary>
+  <p>None</p>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\waste.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Outlet node that can receive any amount of water by pushes</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): Node name</span>
+
+<span class="sd">    Functions intended to call in orchestration:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#Update args</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1">#Update handlers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_set_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pull_check_deny</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_set_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_set_accept</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">push_check_handler</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">push_check_accept</span>
+
+    <span class="c1">#Mass balance</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">mass_balance_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">total_in</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.waste.Waste.push_check_accept" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">push_check_accept</span><span class="p">(</span><span class="n">vqip</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Push check function that accepts all water</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP that has been pushed (ignored)</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>VQIP or an unbounded capacity, indicating all water can be received</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\waste.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">push_check_accept</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Push check function that accepts all water</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict, optional): A VQIP that has been pushed (ignored)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): VQIP or an unbounded capacity, indicating all water can be received</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">vqip</span><span class="p">:</span>
+        <span class="n">vqip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+        <span class="n">vqip</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">constants</span><span class="o">.</span><span class="n">UNBOUNDED_CAPACITY</span>
+    <span class="k">return</span> <span class="n">vqip</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wsimod.nodes.waste.Waste.push_set_accept" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">push_set_accept</span><span class="p">(</span><span class="n">vqip</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Push set function that accepts all water</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>vqip</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>A VQIP that has been pushed (ignored)</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>dict</code>
+          </td>
+          <td><p>An empty VQIP, indicating all water was received</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wsimod\nodes\waste.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">push_set_accept</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vqip</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Push set function that accepts all water</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        vqip (dict): A VQIP that has been pushed (ignored)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        (dict): An empty VQIP, indicating all water was received</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_vqip</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.39f04ddb.min.js"></script>
+      
+    
+  </body>
+</html>
