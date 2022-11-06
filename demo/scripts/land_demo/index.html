@@ -1644,17 +1644,17 @@ print(input_data.sample(10))</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>              site       date       variable         value
-63110       thames 2010-07-18      magnesium  5.116667e-03
-52727     cherwell 2010-01-08        calcium  1.119857e-01
-72026     evenlode 2011-01-14           flow  1.028160e+06
-76032  oxford_land 2010-01-17  precipitation  1.000000e-04
-47321     cherwell 2011-03-02      potassium  3.585714e-03
-5527        thames 2012-05-05    temperature  1.108571e+01
-70710     cherwell 2011-06-03           flow  8.812800e+04
-41920     cherwell 2012-04-28         sodium  2.211429e-02
-66969     evenlode 2013-02-19          boron  2.872857e-05
-61691          ray 2010-08-24      magnesium  6.300000e-03
+<pre>           site       date   variable          value
+42849  evenlode 2010-11-18     sodium       0.013929
+46388    thames 2012-08-06     sodium       0.015671
+66061  evenlode 2010-08-26      boron       0.000056
+59744  evenlode 2009-04-20  magnesium       0.004700
+54215  evenlode 2010-02-09    calcium       0.111100
+19603  evenlode 2011-01-07   chloride       0.022306
+18758  cherwell 2012-09-09   chloride       0.046010
+70969  cherwell 2012-02-17       flow  235008.000000
+35131  cherwell 2009-09-06   nitrogen       0.005000
+38544       ray 2011-01-20   nitrogen       0.008960
 </pre>
 </div>
 </div>
@@ -1942,7 +1942,7 @@ land = Land(name = 'my_land',
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;wsimod.nodes.land.Surface object at 0x000001677E244790&gt;
+<pre>&lt;wsimod.nodes.land.Surface object at 0x000001E5612F4730&gt;
 </pre>
 </div>
 </div>
@@ -2007,7 +2007,7 @@ land = Land(name = 'my_land',
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;wsimod.nodes.land.Surface object at 0x000001677E244790&gt;
+<pre>&lt;wsimod.nodes.land.Surface object at 0x000001E5612F4730&gt;
 </pre>
 </div>
 </div>
@@ -2506,7 +2506,7 @@ print(land.get_surface('my_surface').outflows)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&lt;bound method Surface.simple_deposition of &lt;wsimod.nodes.land.Surface object at 0x000001677E244790&gt;&gt;]
+<pre>[&lt;bound method Surface.simple_deposition of &lt;wsimod.nodes.land.Surface object at 0x000001E5612F4730&gt;&gt;]
 []
 []
 </pre>
@@ -2676,9 +2676,9 @@ print(land.get_surface('my_surface').outflows)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&lt;bound method Surface.simple_deposition of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001677F90CBE0&gt;&gt;, &lt;bound method PerviousSurface.ihacres of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001677F90CBE0&gt;&gt;]
-[&lt;bound method PerviousSurface.calculate_soil_temperature of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001677F90CBE0&gt;&gt;]
-[&lt;bound method PerviousSurface.route of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001677F90CBE0&gt;&gt;]
+<pre>[&lt;bound method Surface.simple_deposition of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001E565BDD180&gt;&gt;, &lt;bound method PerviousSurface.ihacres of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001E565BDD180&gt;&gt;]
+[&lt;bound method PerviousSurface.calculate_soil_temperature of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001E565BDD180&gt;&gt;]
+[&lt;bound method PerviousSurface.route of &lt;wsimod.nodes.land.PerviousSurface object at 0x000001E565BDD180&gt;&gt;]
 </pre>
 </div>
 </div>
@@ -3025,19 +3025,64 @@ flows will be generated and the land tanks will fill up.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>print(land.percolation.storage)
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-23">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">percolation</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">subsurface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">surface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+</pre></div>
+<div id="cell-23" class="clipboard-copy-txt">print(land.percolation.storage)
 print(land.subsurface_runoff.storage)
-print(land.surface_runoff.storage)</p>
+print(land.surface_runoff.storage)</div>
+    
+        </div>
+    </div>
 
 </div>
 </div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>{&#39;phosphate&#39;: 2.63898788010373e-06, &#39;temperature&#39;: 7.91139642130122, &#39;volume&#39;: 0.36532380315470425}
+{&#39;phosphate&#39;: 8.796626267012433e-07, &#39;temperature&#39;: 7.9113964213012204, &#39;volume&#39;: 0.12177460105156807}
+{&#39;phosphate&#39;: 0, &#39;temperature&#39;: 7.625, &#39;volume&#39;: 0.025636758116119596}
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -3060,12 +3105,12 @@ if we run it, and they will just build up</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-23">
+            <clipboard-copy for="cell-24">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3082,7 +3127,7 @@ if we run it, and they will just build up</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">subsurface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">surface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 </pre></div>
-<div id="cell-23" class="clipboard-copy-txt">for i in range(10):
+<div id="cell-24" class="clipboard-copy-txt">for i in range(10):
     land.run()
 
 print(land.percolation.storage)
@@ -3142,12 +3187,12 @@ which is just a model outlet.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-24">
+            <clipboard-copy for="cell-25">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3163,7 +3208,7 @@ which is just a model outlet.</p>
                  <span class="n">capacity</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">outlet</span> <span class="o">=</span> <span class="n">Waste</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;my_outlet&#39;</span><span class="p">)</span>
 </pre></div>
-<div id="cell-24" class="clipboard-copy-txt">node = Node(name = 'my_river')
+<div id="cell-25" class="clipboard-copy-txt">node = Node(name = 'my_river')
 gw = Groundwater(name = 'my_groundwater',
                  area = 10,
                  capacity = 100)
@@ -3195,12 +3240,12 @@ hydrological representation.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-25">
+            <clipboard-copy for="cell-26">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3215,7 +3260,7 @@ hydrological representation.</p>
 <span class="n">arc3</span> <span class="o">=</span> <span class="n">Arc</span><span class="p">(</span><span class="n">in_port</span> <span class="o">=</span> <span class="n">gw</span><span class="p">,</span> <span class="n">out_port</span> <span class="o">=</span> <span class="n">node</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;baseflow&#39;</span><span class="p">)</span>
 <span class="n">arc4</span> <span class="o">=</span> <span class="n">Arc</span><span class="p">(</span><span class="n">in_port</span> <span class="o">=</span> <span class="n">node</span><span class="p">,</span> <span class="n">out_port</span> <span class="o">=</span> <span class="n">outlet</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;outflow&#39;</span><span class="p">)</span>
 </pre></div>
-<div id="cell-25" class="clipboard-copy-txt">arc1 = Arc(in_port = land, out_port = node, name = 'quickflow')
+<div id="cell-26" class="clipboard-copy-txt">arc1 = Arc(in_port = land, out_port = node, name = 'quickflow')
 arc2 = Arc(in_port = land, out_port = gw, name = 'percolation')
 arc3 = Arc(in_port = gw, out_port = node, name = 'baseflow')
 arc4 = Arc(in_port = node, out_port = outlet, name = 'outflow')</div>
@@ -3246,12 +3291,12 @@ arc4 = Arc(in_port = node, out_port = outlet, name = 'outflow')</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-26">
+            <clipboard-copy for="cell-27">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3268,7 +3313,7 @@ arc4 = Arc(in_port = node, out_port = outlet, name = 'outflow')</div>
 <span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">subsurface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">surface_runoff</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 </pre></div>
-<div id="cell-26" class="clipboard-copy-txt">
+<div id="cell-27" class="clipboard-copy-txt">
 for i in range(10):
     land.run()
 
@@ -3326,12 +3371,12 @@ to have a functioning hydrological model.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-27">
+            <clipboard-copy for="cell-28">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3343,7 +3388,7 @@ to have a functioning hydrological model.</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">my_model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">()</span>
 </pre></div>
-<div id="cell-27" class="clipboard-copy-txt">
+<div id="cell-28" class="clipboard-copy-txt">
 my_model = Model()</div>
     
         </div>
@@ -3371,12 +3416,12 @@ my_model = Model()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-28">
+            <clipboard-copy for="cell-29">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3389,7 +3434,7 @@ my_model = Model()</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">my_model</span><span class="o">.</span><span class="n">add_instantiated_nodes</span><span class="p">([</span><span class="n">land</span><span class="p">,</span><span class="n">node</span><span class="p">,</span><span class="n">gw</span><span class="p">,</span><span class="n">outlet</span><span class="p">])</span>
 <span class="n">my_model</span><span class="o">.</span><span class="n">add_instantiated_arcs</span><span class="p">([</span><span class="n">arc1</span><span class="p">,</span><span class="n">arc2</span><span class="p">,</span><span class="n">arc3</span><span class="p">,</span><span class="n">arc4</span><span class="p">])</span>
 </pre></div>
-<div id="cell-28" class="clipboard-copy-txt">my_model.add_instantiated_nodes([land,node,gw,outlet])
+<div id="cell-29" class="clipboard-copy-txt">my_model.add_instantiated_nodes([land,node,gw,outlet])
 my_model.add_instantiated_arcs([arc1,arc2,arc3,arc4])</div>
     
         </div>
@@ -3417,12 +3462,12 @@ my_model.add_instantiated_arcs([arc1,arc2,arc3,arc4])</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-29">
+            <clipboard-copy for="cell-30">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3434,7 +3479,7 @@ my_model.add_instantiated_arcs([arc1,arc2,arc3,arc4])</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">my_model</span><span class="o">.</span><span class="n">dates</span> <span class="o">=</span> <span class="n">dates</span>
 </pre></div>
-<div id="cell-29" class="clipboard-copy-txt">my_model.dates = dates</div>
+<div id="cell-30" class="clipboard-copy-txt">my_model.dates = dates</div>
     
         </div>
     </div>
@@ -3462,12 +3507,12 @@ to empty to give a clean start for the model.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-30">
+            <clipboard-copy for="cell-31">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3479,7 +3524,7 @@ to empty to give a clean start for the model.</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">my_model</span><span class="o">.</span><span class="n">reinit</span><span class="p">()</span>
 </pre></div>
-<div id="cell-30" class="clipboard-copy-txt">my_model.reinit()</div>
+<div id="cell-31" class="clipboard-copy-txt">my_model.reinit()</div>
     
         </div>
     </div>
@@ -3506,12 +3551,12 @@ to empty to give a clean start for the model.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-31">
+            <clipboard-copy for="cell-32">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3523,7 +3568,7 @@ to empty to give a clean start for the model.</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
-<div id="cell-31" class="clipboard-copy-txt">results = my_model.run()</div>
+<div id="cell-32" class="clipboard-copy-txt">results = my_model.run()</div>
     
         </div>
     </div>
@@ -3543,7 +3588,7 @@ to empty to give a clean start for the model.</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>100%|████████████████████████████████████████████████████████████████████████████| 1456/1456 [00:00&lt;00:00, 1889.27it/s]
+<pre>100%|████████████████████████████████████████████████████████████████████████████| 1456/1456 [00:00&lt;00:00, 1902.82it/s]
 </pre>
 </div>
 </div>
@@ -3571,12 +3616,12 @@ to empty to give a clean start for the model.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-32">
+            <clipboard-copy for="cell-33">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3592,7 +3637,7 @@ to empty to give a clean start for the model.</p>
 <span class="n">flows</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;arc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;outflow&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">flow</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">flows</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;arc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;outflow&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">phosphate</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
-<div id="cell-32" class="clipboard-copy-txt">flows = pd.DataFrame(results[0])
+<div id="cell-33" class="clipboard-copy-txt">flows = pd.DataFrame(results[0])
 
 f, axs = plt.subplots(2,1)
 flows.groupby('arc').get_group('outflow').set_index('time').flow.plot(ax=axs[0])
@@ -3612,7 +3657,7 @@ flows.groupby('arc').get_group('outflow').set_index('time').phosphate.plot(ax=ax
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 
 
 
@@ -3669,12 +3714,12 @@ though it is applied each day.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-33">
+            <clipboard-copy for="cell-34">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3694,7 +3739,7 @@ though it is applied each day.</p>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">surface_input_data</span><span class="p">[(</span><span class="s1">&#39;nhx-manure&#39;</span><span class="p">,</span><span class="n">example_date</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">))])</span>
 </pre></div>
-<div id="cell-33" class="clipboard-copy-txt">
+<div id="cell-34" class="clipboard-copy-txt">
 surface_input_data = {}
 for pollutant in ['srp','nhx','noy']:
     for source in ['manure','fertiliser','dry','wet']:
@@ -3752,12 +3797,12 @@ to simulate a greater number of pollutants</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-34">
+            <clipboard-copy for="cell-35">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3769,7 +3814,7 @@ to simulate a greater number of pollutants</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">constants</span><span class="o">.</span><span class="n">set_default_pollutants</span><span class="p">()</span>
 </pre></div>
-<div id="cell-34" class="clipboard-copy-txt">constants.set_default_pollutants()</div>
+<div id="cell-35" class="clipboard-copy-txt">constants.set_default_pollutants()</div>
     
         </div>
     </div>
@@ -3797,12 +3842,12 @@ to the created Land node. I will use the parameters for Maize for this growing s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-35">
+            <clipboard-copy for="cell-36">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3837,7 +3882,7 @@ to the created Land node. I will use the parameters for Maize for this growing s
             <span class="n">data_input_dict</span> <span class="o">=</span> <span class="n">land_inputs</span><span class="p">,</span>
             <span class="n">surfaces</span> <span class="o">=</span> <span class="p">[</span><span class="n">surface</span><span class="p">])</span>
 </pre></div>
-<div id="cell-35" class="clipboard-copy-txt">crop_factor_stages = [0.   , 0.   , 0.3  , 0.3  , 1.2  , 1.2  , 0.325, 0.   , 0.   ]
+<div id="cell-36" class="clipboard-copy-txt">crop_factor_stages = [0.   , 0.   , 0.3  , 0.3  , 1.2  , 1.2  , 0.325, 0.   , 0.   ]
 crop_factor_stage_dates =[  0,  90,  91, 121, 161, 213, 244, 245, 366]
 sowing_day = 91
 harvest_day = 244
@@ -3888,12 +3933,12 @@ But has also added a range of other functions related to deposition.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-36">
+            <clipboard-copy for="cell-37">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3905,7 +3950,7 @@ But has also added a range of other functions related to deposition.</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">get_surface</span><span class="p">(</span><span class="s1">&#39;my_growing_surface&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">inflows</span><span class="p">)</span>
 </pre></div>
-<div id="cell-36" class="clipboard-copy-txt">print(land.get_surface('my_growing_surface').inflows)</div>
+<div id="cell-37" class="clipboard-copy-txt">print(land.get_surface('my_growing_surface').inflows)</div>
     
         </div>
     </div>
@@ -3925,7 +3970,7 @@ But has also added a range of other functions related to deposition.</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&lt;bound method GrowingSurface.calc_crop_cover of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method Surface.atmospheric_deposition of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method Surface.precipitation_deposition of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method PerviousSurface.ihacres of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.fertiliser of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.manure of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;]
+<pre>[&lt;bound method GrowingSurface.calc_crop_cover of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method Surface.atmospheric_deposition of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method Surface.precipitation_deposition of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method PerviousSurface.ihacres of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.fertiliser of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.manure of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;]
 </pre>
 </div>
 </div>
@@ -3953,12 +3998,12 @@ But has also added a range of other functions related to deposition.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-37">
+            <clipboard-copy for="cell-38">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3970,7 +4015,7 @@ But has also added a range of other functions related to deposition.</p>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">land</span><span class="o">.</span><span class="n">get_surface</span><span class="p">(</span><span class="s1">&#39;my_growing_surface&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">processes</span><span class="p">)</span>
 </pre></div>
-<div id="cell-37" class="clipboard-copy-txt">print(land.get_surface('my_growing_surface').processes)</div>
+<div id="cell-38" class="clipboard-copy-txt">print(land.get_surface('my_growing_surface').processes)</div>
     
         </div>
     </div>
@@ -3990,7 +4035,7 @@ But has also added a range of other functions related to deposition.</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&lt;bound method PerviousSurface.calculate_soil_temperature of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.calc_temperature_dependence_factor of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.calc_soil_moisture_dependence_factor of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.soil_pool_transformation of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.calc_crop_uptake of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.erosion of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.denitrification of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;, &lt;bound method GrowingSurface.adsorption of &lt;wsimod.nodes.land.GrowingSurface object at 0x0000016702276CE0&gt;&gt;]
+<pre>[&lt;bound method PerviousSurface.calculate_soil_temperature of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.calc_temperature_dependence_factor of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.calc_soil_moisture_dependence_factor of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.soil_pool_transformation of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.calc_crop_uptake of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.erosion of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.denitrification of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;, &lt;bound method GrowingSurface.adsorption of &lt;wsimod.nodes.land.GrowingSurface object at 0x000001E567DF6F20&gt;&gt;]
 </pre>
 </div>
 </div>
@@ -4018,12 +4063,12 @@ But has also added a range of other functions related to deposition.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-38">
+            <clipboard-copy for="cell-39">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4052,7 +4097,7 @@ But has also added a range of other functions related to deposition.</p>
 
 <span class="n">results</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
-<div id="cell-38" class="clipboard-copy-txt">node = Node(name = 'my_river')
+<div id="cell-39" class="clipboard-copy-txt">node = Node(name = 'my_river')
 gw = Groundwater(name = 'my_groundwater',
                  area = 10,
                  capacity = 100)
@@ -4089,7 +4134,7 @@ results = my_model.run()</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>100%|████████████████████████████████████████████████████████████████████████████| 1456/1456 [00:01&lt;00:00, 1046.15it/s]
+<pre>100%|████████████████████████████████████████████████████████████████████████████| 1456/1456 [00:01&lt;00:00, 1056.01it/s]
 </pre>
 </div>
 </div>
@@ -4117,12 +4162,12 @@ results = my_model.run()</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-39">
+            <clipboard-copy for="cell-40">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4138,7 +4183,7 @@ results = my_model.run()</div>
 <span class="n">flows</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;arc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;outflow&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">flow</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">flows</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;arc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;outflow&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">phosphate</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
-<div id="cell-39" class="clipboard-copy-txt">
+<div id="cell-40" class="clipboard-copy-txt">
 flows = pd.DataFrame(results[0])
 
 f, axs = plt.subplots(2,1)
@@ -4159,7 +4204,7 @@ flows.groupby('arc').get_group('outflow').set_index('time').phosphate.plot(ax=ax
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
